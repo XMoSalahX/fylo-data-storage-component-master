@@ -1,0 +1,74 @@
+@media (min-width: 1440px) {
+  body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("../images/bg-desktop.png");
+    background-size: contain;
+    background-position-y: 100%;
+  }
+
+  .container {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .container > div:first-child {
+    width: 25%;
+  }
+
+  .container > div:last-child {
+    width: 35%;
+  }
+
+  .data {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .dataCon {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 5%;
+  }
+  .container > div:last-child .dataCon .range-data {
+    width: 90%;
+  }
+
+  .container > div:last-child .dataCon {
+    height: 60%;
+  }
+
+  .flag {
+    bottom: unset;
+    top: -25%;
+    left: unset;
+    right: 10%;
+    width: 35%;
+    border-bottom-right-radius: 0px;
+  }
+
+  .flag::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-color: white white transparent transparent;
+    border-width: 15px;
+    border-style: solid;
+  }
+}
+
+@media (min-width: 1441px) {
+  body {
+    background-position-y: 105%;
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    background-position-y: 120%;
+  }
+}

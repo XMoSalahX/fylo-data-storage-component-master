@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  color: hsl(243, 100%, 93%);
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-image: url("../images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.container > div {
+  height: 30%;
+  width: 85%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.container > div:first-child {
+  background-color: hsl(228, 56%, 26%);
+  border-top-right-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container > div:first-child > div {
+  margin-left: 10%;
+}
+.container > div:first-child .button {
+  display: flex;
+  gap: 7%;
+}
+
+.container > div:first-child .button > div {
+  background-color: hsl(229, 57%, 11%);
+  width: 50px;
+  height: 50px;
+  border-radius: 15%;
+  display: grid;
+  place-items: center;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+}
+.container > div:first-child .button > div image {
+  display: inline-block;
+}
+
+.container > div:last-child .dataCon {
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  width: 100%;
+  height: 70%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+  padding-top: 5%;
+  position: relative;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.rangeCont {
+  height: 20px;
+  background-color: hsla(229, 57%, 11%, 0.616);
+  width: 90%;
+  margin: auto;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  position: relative;
+}
+
+.rangeCont::before {
+  content: "";
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  width: calc((815 / 1000) * 100%);
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.rangeCont::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  background-color: hsl(243, 100%, 93%);
+  transform: translate (0, 1px);
+  -webkit-transform: translateY(1px);
+  -moz-transform: translate (0, 1px);
+  -ms-transform: translate (0, 1px);
+  -o-transform: translate (0, 1px);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  left: calc((815 / 1000) * 100% - 19px);
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.flag {
+  position: absolute;
+  width: 60%;
+  background-color: white;
+  color: hsl(229, 7%, 55%);
+  height: 40%;
+  bottom: -18%;
+  left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: bold;
+}
+
+.flag b {
+  color: black;
+  font-size: 40px;
+}
